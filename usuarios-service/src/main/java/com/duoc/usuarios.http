@@ -1,0 +1,41 @@
+### Obtener todos los usuarios
+GET http://localhost:8081/usuarios
+Accept: application/json
+
+###
+
+### Obtener usuario por ID
+GET http://localhost:8081/usuarios/1
+Accept: application/json
+
+###
+
+### Crear un nuevo usuario
+POST http://localhost:8081/usuarios
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nombre": "Ignacia",
+  "rol": "DUEÑO",
+  "correo": "ignacia@example.com"
+}
+
+###
+
+### Actualizar usuario
+PUT http://localhost:8081/usuarios/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "nombre": "Ignacia Valenzuela",
+  "rol": "ADMIN",
+  "correo": "ignacia.valenzuela@example.com"
+}
+
+###
+
+### Eliminar usuario
+DELETE http://localhost:8081/usuarios/4
+Accept: application/json
